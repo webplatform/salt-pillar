@@ -45,12 +45,9 @@ infra:
   # refered to as "foo.local.wpdn"
   # Most important keys: salt, mail, monitor, backup
   hosts_entries:
-    salt: 10.10.10.41
-    masterdb: 10.10.10.74
+    salt: 10.10.10.211
     mail: 10.10.10.112
     backup: 10.10.10.101
-    source: 10.10.10.40
-    specs: 10.10.10.201
 
   db_servers:
     postgres:
