@@ -12,9 +12,6 @@ base:
     - infra
     - logrotate
     - upstream
-  'biosversion:VirtualBox':
-    - match: grain
-    - workbench
   'app*':
     - certificates
     - rsyslog.app
@@ -28,6 +25,7 @@ base:
     - rsync.salt_master
     - backup
     - logrotate.salt
+    - basesystem.salt
   'roles:db':
     - match: grain
     - mysql

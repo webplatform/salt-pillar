@@ -1,0 +1,122 @@
+basesystem:
+  salt:
+
+    # Should be the same for both:
+    #   - https://github.com/webplatform/ops in vagrant-workbench/salt/states/workbench/salt.sls
+    #   - https://github.com/webplatform/salt-states in salt/master.sls
+    formulas_repos:
+      /srv/formulas/basesystem:
+        origin: https://github.com/webplatform/salt-basesystem.git
+        remotes:
+          upstream: git@github.com:webplatform/salt-basesystem.git
+      /srv/formulas/sysctl:
+        origin: https://github.com/webplatform/saltstack-sysctl-formula.git
+        remotes:
+          upstream: git@github.com:webplatform/saltstack-sysctl-formula.git
+          # Gotta fix issue webplatform/salt-basesystem#1 #TODO
+          #author: https://github.com/bechtoldt/saltstack-sysctl-formula.git
+      /srv/formulas/postgres:
+        origin: https://github.com/saltstack-formulas/postgres-formula.git
+        remotes:
+          upstream: git@github.com:webplatform/postgres-formula.git
+      /srv/formulas/docker:
+        origin: https://github.com/saltstack-formulas/docker-formula.git
+        remotes:
+          upstream: git@github.com:webplatform/docker-formula.git
+      /srv/formulas/logrotate:
+        origin: https://github.com/webplatform/logrotate-formula.git
+        remotes:
+          upstream: git@github.com:webplatform/logrotate-formula.git
+      /srv/formulas/redis:
+        origin: https://github.com/saltstack-formulas/redis-formula.git
+        remotes:
+          upstream: git@github.com:webplatform/redis-formula.git
+      /srv/formulas/nfs:
+        origin: https://github.com/saltstack-formulas/nfs-formula.git
+        remotes:
+          upstream: git@github.com:webplatform/nfs-formula.git
+      /srv/formulas/logstash:
+        origin: https://github.com/saltstack-formulas/logstash-formula.git
+        remotes:
+          upstream: git@github.com:webplatform/logstash-formula.git
+      /srv/formulas/emailblackhole:
+        origin: https://github.com/renoirb/emailblackhole-formula.git
+        remotes:
+          upstream: git@github.com:renoirb/emailblackhole-formula.git
+
+    # See: https://github.com/webplatform/ops in salt-master/init.sh
+    srv_repos:
+      /srv/private:
+        origin: https://gitlab.w3.org/webplatform/salt-pillar-private.git
+      /srv/salt:
+        origin: https://github.com/webplatform/salt-states.git
+        branch: 201506-refactor
+        remotes:
+          upstream: git@source.webplatform.org:public-salt-states.git
+      /srv/pillar:
+        origin: https://github.com/webplatform/salt-pillar.git
+        remotes:
+          upstream: git@source.webplatform.org:public-salt-pillar.git
+      /srv/runner:
+        origin: git@source.webplatform.org:runners.git
+      /srv/ops:
+        origin: https://github.com/webplatform/ops.git
+        remotes:
+          upstream: git@source.webplatform.org:public-ops.git
+
+    # See: https://github.com/webplatform/ops in salt-master/code.sh
+    srv_code_repos:
+      /srv/code/buggenie/repo:
+        origin: https://github.com/webplatform/thebuggenie.git
+        branch: webplatform-customizations
+        remotes:
+          upstream: git@github.com:webplatform/thebuggenie.git
+      /srv/code/dabblet/repo:
+        origin: https://github.com/webplatform/dabblet.git
+        branch: webplatform-customizations
+        remotes:
+          upstream: git@github.com:webplatform/dabblet.git
+      /srv/code/notes-server/repo:
+        origin: https://github.com/webplatform/annotation-service.git
+        remotes:
+          upstream: git@github.com:webplatform/annotation-service.git
+      /srv/code/bots/repo:
+        origin: git@source.webplatform.org:pierc.git
+      /srv/code/mailhub/repo:
+        origin: https://gitlab.w3.org/webplatform/private-mailhub.git
+        remotes:
+          upstream: git@source.webplatform.org:mailhub.git
+      /srv/code/webat25/repo:
+        origin: https://gitlab.w3.org/webplatform/webat25.org.git
+        remotes:
+          upstream: git@source.webplatform.org:webat25.git
+      /srv/code/campaign-bookmarklet/repo:
+        origin: https://github.com/webplatform/campaign-bookmarklet.git
+        remotes:
+          upstream: git@github.com:webplatform/campaign-bookmarklet.git
+      /srv/code/compat/repo:
+        origin: https://github.com/webplatform/compatibility-data.git
+        remotes:
+          upstream: git@github.com:webplatform/compatibility-data.git
+      /srv/code/docsprint-dashboard/repo:
+        origin: https://github.com/webplatform/DocSprintDashboard.git
+        remotes:
+          upstream: git@github.com:webplatform/DocSprintDashboard.git
+      /srv/code/www/repo:
+        origin: https://github.com/webplatform/www.webplatform.org.git
+        remotes:
+          upstream: git@github.com:webplatform/www.webplatform.org.git
+      /srv/code/blog/repo:
+        origin: https://github.com/webplatform/blog-service.git
+        remotes:
+          upstream: git@github.com:webplatform/blog-service.git
+      /srv/code/wiki/repo/mediawiki/repo:
+        origin: https://github.com/webplatform/mediawiki-core.git
+        branch: wmf/1.25wmf15
+        #branch: 1.24wmf16-wpd
+        remotes:
+          upstream: git@github.com:webplatform/mediawiki-core.git
+
+
+
+
