@@ -13,8 +13,7 @@ basesystem:
         origin: https://github.com/webplatform/saltstack-sysctl-formula.git
         remotes:
           upstream: git@github.com:webplatform/saltstack-sysctl-formula.git
-          # Gotta fix issue webplatform/salt-basesystem#1 #TODO
-          #author: https://github.com/bechtoldt/saltstack-sysctl-formula.git
+          author: https://github.com/bechtoldt/saltstack-sysctl-formula.git
       /srv/formulas/postgres:
         origin: https://github.com/saltstack-formulas/postgres-formula.git
         remotes:
@@ -35,10 +34,6 @@ basesystem:
         origin: https://github.com/saltstack-formulas/nfs-formula.git
         remotes:
           upstream: git@github.com:webplatform/nfs-formula.git
-      /srv/formulas/logstash:
-        origin: https://github.com/saltstack-formulas/logstash-formula.git
-        remotes:
-          upstream: git@github.com:webplatform/logstash-formula.git
       /srv/formulas/emailblackhole:
         origin: https://github.com/renoirb/emailblackhole-formula.git
         remotes:
@@ -48,6 +43,9 @@ basesystem:
     srv_repos:
       /srv/private:
         origin: https://gitlab.w3.org/webplatform/salt-pillar-private.git
+        branch: 201506-refactor
+        remotes:
+          upstream: git@source.webplatform.org:pillars-private.git
       /srv/salt:
         origin: https://github.com/webplatform/salt-states.git
         branch: 201506-refactor
@@ -55,12 +53,12 @@ basesystem:
           upstream: git@source.webplatform.org:public-salt-states.git
       /srv/pillar:
         origin: https://github.com/webplatform/salt-pillar.git
+        branch: 201506-refactor
         remotes:
           upstream: git@source.webplatform.org:public-salt-pillar.git
-      /srv/runner:
-        origin: git@source.webplatform.org:runners.git
       /srv/ops:
         origin: https://github.com/webplatform/ops.git
+        branch: 201506-refactor
         remotes:
           upstream: git@source.webplatform.org:public-ops.git
 
@@ -110,13 +108,10 @@ basesystem:
         origin: https://github.com/webplatform/blog-service.git
         remotes:
           upstream: git@github.com:webplatform/blog-service.git
-      /srv/code/wiki/repo/mediawiki/repo:
+      /srv/code/wiki/repo/mediawiki:
         origin: https://github.com/webplatform/mediawiki-core.git
         branch: wmf/1.25wmf15
         #branch: 1.24wmf16-wpd
         remotes:
           upstream: git@github.com:webplatform/mediawiki-core.git
-
-
-
 

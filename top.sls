@@ -46,7 +46,7 @@ base:
     - sysctl.redis
   'roles:monitor':
     - match: grain
-    - logstash.receptacle
+    - basesystem.monitor
   'roles:bots':
     - match: grain
     - bots
