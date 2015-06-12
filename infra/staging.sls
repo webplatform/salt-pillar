@@ -45,15 +45,15 @@ infra:
   # refered to as "foo.local.wpdn"
   # Most important keys: salt, mail, monitor, backup
   hosts_entries:
-    salt: 10.10.10.244
+    salt: 10.10.10.38
     mail: 10.10.10.180
-    backup: 10.10.10.18
+    backup: 10.10.10.39
 
   db_servers:
     postgres:
       writes: 10.10.10.21
     mysql:
-      writes: 10.10.10.6
+      writes: 10.10.10.40
 
   ## Ensure it matches notes:elastic_endpoint
   ## infra:elasticsearch:backup_nfs_mountpoint MUST match at pillar nfs:server:exports for ElasticSearch
