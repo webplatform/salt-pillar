@@ -12,7 +12,6 @@ base:
     - infra
     - logrotate
     - upstream
-    - fastly
   'app*':
     - certificates
     - rsyslog.app

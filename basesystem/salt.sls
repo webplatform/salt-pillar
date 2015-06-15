@@ -15,25 +15,25 @@ basesystem:
           upstream: git@github.com:webplatform/saltstack-sysctl-formula.git
           author: https://github.com/bechtoldt/saltstack-sysctl-formula.git
       /srv/formulas/postgres:
-        origin: https://github.com/saltstack-formulas/postgres-formula.git
+        origin: https://github.com/webplatform/postgres-formula.git
         remotes:
-          upstream: git@github.com:webplatform/postgres-formula.git
+          upstream: git@github.com:saltstack-formulas/postgres-formula.git
       /srv/formulas/docker:
-        origin: https://github.com/saltstack-formulas/docker-formula.git
+        origin: https://github.com/webplatform/docker-formula.git
         remotes:
-          upstream: git@github.com:webplatform/docker-formula.git
+          upstream: git@github.com:saltstack-formulas/docker-formula.git
       /srv/formulas/logrotate:
         origin: https://github.com/webplatform/logrotate-formula.git
         remotes:
           upstream: git@github.com:webplatform/logrotate-formula.git
       /srv/formulas/redis:
-        origin: https://github.com/saltstack-formulas/redis-formula.git
+        origin: https://github.com/webplatform/redis-formula.git
         remotes:
-          upstream: git@github.com:webplatform/redis-formula.git
+          upstream: git@github.com:saltstack-formulas/redis-formula.git
       /srv/formulas/nfs:
-        origin: https://github.com/saltstack-formulas/nfs-formula.git
+        origin: https://github.com/webplatform/nfs-formula.git
         remotes:
-          upstream: git@github.com:webplatform/nfs-formula.git
+          upstream: git@github.com:saltstack-formulas/nfs-formula.git
       /srv/formulas/emailblackhole:
         origin: https://github.com/renoirb/emailblackhole-formula.git
         remotes:
@@ -81,13 +81,13 @@ basesystem:
       /srv/code/bots/repo:
         origin: git@source.webplatform.org:pierc.git
       /srv/code/mailhub/repo:
-        origin: https://gitlab.w3.org/webplatform/private-mailhub.git
+        origin: git@source.webplatform.org:mailhub.git
         remotes:
-          upstream: git@source.webplatform.org:mailhub.git
+          upstream: https://gitlab.w3.org/webplatform/private-mailhub.git
       /srv/code/webat25/repo:
-        origin: https://gitlab.w3.org/webplatform/webat25.org.git
+        origin: git@source.webplatform.org:webat25.git
         remotes:
-          upstream: git@source.webplatform.org:webat25.git
+          upstream: https://gitlab.w3.org/webplatform/webat25.org.git
       /srv/code/campaign-bookmarklet/repo:
         origin: https://github.com/webplatform/campaign-bookmarklet.git
         remotes:

@@ -12,10 +12,6 @@ sysctl:
       value: 2
     - name: vm.overcommit_ratio
       value: 80
-    - name: net.ipv6.conf.default.disable_ipv6
-      value: 1
-    - name: net.ipv6.conf.all.disable_ipv6
-      value: 1
     - name: vm.panic_on_oom
       value: 1
     - name: kernel.panic
