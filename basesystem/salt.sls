@@ -42,10 +42,10 @@ basesystem:
     # See: https://github.com/webplatform/ops in salt-master/init.sh
     srv_repos:
       /srv/private:
-        origin: https://gitlab.w3.org/webplatform/salt-pillar-private.git
+        origin: git@source.webplatform.org:pillars-private.git
         branch: 201506-refactor
         remotes:
-          upstream: git@source.webplatform.org:pillars-private.git
+          upstream: https://gitlab.w3.org/webplatform/salt-pillar-private.git
       /srv/salt:
         origin: https://github.com/webplatform/salt-states.git
         branch: 201506-refactor
