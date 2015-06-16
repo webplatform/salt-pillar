@@ -43,11 +43,12 @@ infra:
 
   # In use for each node /etc/hosts and entries will be
   # refered to as "foo.local.wpdn"
-  # Most important keys: salt, mail, monitor, backup
+  # Most important keys: salt, masterdb, mail, monitor, backup
   hosts_entries:
     salt: 10.10.10.211
     mail: 10.10.10.112
     backup: 10.10.10.101
+    masterdb: 10.10.10.74
 
   db_servers:
     postgres:
