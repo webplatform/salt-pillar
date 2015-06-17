@@ -59,14 +59,10 @@ base:
     - sysctl.redis
   'roles:sessions':
     - match: grain
-<<<<<<< HEAD
     - ganglia.group.keystores
-=======
-    - ganglia.group.sessions
->>>>>>> Ganglia clusters, removed unused formula
     - redis
     - sysctl.redis
-  'roles:noc'
+  'roles:noc':
     - match: grain
     - ganglia.group.monitor
   'roles:monitor':
