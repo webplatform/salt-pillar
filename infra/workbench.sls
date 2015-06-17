@@ -24,16 +24,17 @@
 #
 
 infra:
+#  salt_testing: True
 
   current:
-    tld: workbench.wpdn
+    tld: webplatform.local
 
   notes-server:
     port: 8001
-    public_url: https://notes.workbench.wpdn
+    public_url: https://notes.webplatform.local
     ## Make sure it matches infra:elasticsearch
     elastic_endpoint: http://192.168.0.102:9200
-    sender_email: notifier-notes@workbench.wpdn
+    sender_email: notifier-notes@webplatform.local
 
   auth-server:
     auth:
@@ -49,11 +50,11 @@ infra:
       host: 192.168.0.102
       port: 3030
     endpoints:
-      auth: https://oauth.accounts.workbench.wpdn/v1/authorization
-      token: https://oauth.accounts.workbench.wpdn/v1/token
-      session: https://profile.accounts.workbench.wpdn/v1/session
-      session_read: https://profile.accounts.workbench.wpdn/v1/session/read
-      session_recover: https://profile.accounts.workbench.wpdn/v1/session/recover
+      auth: https://oauth.accounts.webplatform.local/v1/authorization
+      token: https://oauth.accounts.webplatform.local/v1/token
+      session: https://profile.accounts.webplatform.local/v1/session
+      session_read: https://profile.accounts.webplatform.local/v1/session/read
+      session_recover: https://profile.accounts.webplatform.local/v1/session/recover
 
   gdnsd_timestamp: 2015052200
 
