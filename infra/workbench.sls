@@ -72,6 +72,10 @@ infra:
     # We are in Vagrant with port_forward set, lets use my LAN IP address
     # so my other machines can use it
     salt: 192.168.0.101
+    masterdb: 192.168.0.101
+    backup: 192.168.0.101
+    mail: 192.168.0.101
+    monitor: 192.168.0.101
 
   db_servers:
     postgres:

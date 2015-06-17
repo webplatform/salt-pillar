@@ -46,9 +46,10 @@ infra:
   # Most important keys: salt, masterdb, mail, monitor, backup
   hosts_entries:
     salt: 10.10.10.211
-    mail: 10.10.10.112
-    backup: 10.10.10.101
     masterdb: 10.10.10.74
+    backup: 10.10.10.101
+    mail: 10.10.10.112
+    monitor: 10.10.10.2
 
   db_servers:
     postgres:

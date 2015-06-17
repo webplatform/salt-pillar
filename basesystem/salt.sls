@@ -34,10 +34,6 @@ basesystem:
         origin: https://github.com/webplatform/nfs-formula.git
         remotes:
           upstream: git@github.com:saltstack-formulas/nfs-formula.git
-      /srv/formulas/emailblackhole:
-        origin: https://github.com/renoirb/emailblackhole-formula.git
-        remotes:
-          upstream: git@github.com:renoirb/emailblackhole-formula.git
 
     # See: https://github.com/webplatform/ops in salt-master/init.sh
     srv_repos:

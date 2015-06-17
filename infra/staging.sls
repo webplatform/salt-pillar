@@ -49,6 +49,7 @@ infra:
     masterdb: 10.10.10.73
     backup: 10.10.10.74
     mail: 10.10.10.75
+    monitor: 10.10.10.3
 
   db_servers:
     postgres:
