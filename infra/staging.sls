@@ -55,7 +55,7 @@ infra:
     postgres:
       writes: 10.10.10.2
     mysql:
-      writes: 10.10.10.73
+      writes: 10.10.10.84
 
   ## Ensure it matches notes:elastic_endpoint
   ## infra:elasticsearch:backup_nfs_mountpoint MUST match at pillar nfs:server:exports for ElasticSearch
@@ -87,8 +87,6 @@ infra:
     - '10.10.10.78:11211'
 
   public_ips:
-    piwik:
-      - 173.236.254.222
     app:
       - 173.236.254.223
       - 173.236.254.224
@@ -104,8 +102,8 @@ infra:
       - 173.236.254.236
     bots:
       - 173.236.254.237
-    notes:
+    frontend:
       - 173.236.254.228
-    accounts:
       - 173.236.255.186
+      - 173.236.254.222
 
