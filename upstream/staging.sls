@@ -2,7 +2,7 @@ upstream:
   cachet:
     port: 8000
     nodes:
-      - 10.10.10.15
+      - 10.10.10.83
   discourse:
     port: 8001
     nodes:
