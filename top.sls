@@ -68,7 +68,6 @@ base:
   'roles:monitor':
     - match: grain
     - ganglia.group.monitor
-    - basesystem.monitor
   'roles:bots':
     - match: grain
     - ganglia.group.bots

@@ -8,21 +8,21 @@ infra:
     port: 8001
     public_url: https://notes.webplatformstaging.org
     ## Make sure it matches infra:elasticsearch
-    elastic_endpoint: http://10.10.10.4:9200
+    elastic_endpoint: http://10.10.10.93:9200
     sender_email: notifier-notes@webplatformstaging.org
 
   auth-server:
     auth:
-      host: 10.10.10.3
+      host: 10.10.10.88
       port: 9000
     profile:
-      host: 10.10.10.3
+      host: 10.10.10.88
       port: 8081
     oauth:
-      host: 10.10.10.3
+      host: 10.10.10.88
       port: 9010
     content:
-      host: 10.10.10.3
+      host: 10.10.10.88
       port: 3030
     endpoints:
       auth: https://oauth.accounts.webplatformstaging.org/v1/authorization
@@ -31,15 +31,15 @@ infra:
       session_read: https://profile.accounts.webplatformstaging.org/v1/session/read
       session_recover: https://profile.accounts.webplatformstaging.org/v1/session/recover
 
-  gdnsd_timestamp: 2015061600
+  gdnsd_timestamp: 2015061908
 
   # Host names we want to override public name (e.g. api.accounts.webplatform.org)
   # into using its private IP address.
   # Most important keys: api.accounts, oauth.accounts, profile.accounts
   hardcoded_entries:
-    api.accounts: 10.10.10.3
-    oauth.accounts: 10.10.10.3
-    profile.accounts: 10.10.10.3
+    api.accounts: 10.10.10.88
+    oauth.accounts: 10.10.10.88
+    profile.accounts: 10.10.10.88
 
   # In use for each node /etc/hosts and entries will be
   # refered to as "foo.local.wpdn"
@@ -63,12 +63,12 @@ infra:
     backup_nfs_mountpoint: /srv/exports/elasticsearch
     backup_owner_uid: 107
     backup_owner_gid: 112
-    private: 10.10.10.4
+    private: 10.10.10.93
     port: 9200
     nodes-wiki:
       - 10.10.10.2
     nodes:
-      - 10.10.10.4
+      - 10.10.10.93
 
   ## MUST be strings, e.g. '10.10.10.1:11211'!
   sessions_memcache:
@@ -80,11 +80,11 @@ infra:
 
   ## MUST be strings, e.g. '10.10.10.1:6379'!
   alpha_redis:
-    - '10.10.10.77:6379'
+    - '10.10.10.89:6379'
 
   ## MUST be strings, e.g. '10.10.10.1:11211'!
   alpha_memcache:
-    - '10.10.10.78:11211'
+    - '10.10.10.90:11211'
 
   public_ips:
     app:
@@ -93,8 +93,6 @@ infra:
       - 173.236.254.225
     blog:
       - 173.236.254.226
-    project:
-      - 173.236.254.227
     salt:
       - 173.236.254.239
     mail:
@@ -106,4 +104,5 @@ infra:
       - 173.236.254.228
       - 173.236.255.186
       - 173.236.254.222
+      - 173.236.254.227
 

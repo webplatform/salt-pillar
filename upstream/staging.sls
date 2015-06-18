@@ -1,30 +1,26 @@
 upstream:
   cachet:
-    port: 8000
     nodes:
       - 10.10.10.83
   discourse:
-    port: 8001
     nodes:
-      - 10.10.10.15
+      - 10.10.10.95
   publican:
-    port: 8002
     nodes:
-      - 10.10.10.17
+      - 10.10.10.96
   specs:
-    port: 8003
     nodes:
-      - 10.10.10.17
+      - 10.10.10.96
   piwik:
-    port: 8004
     nodes:
-      - 10.10.10.16
+      - 10.10.10.94
   hypothesis:
-    port: 8005
     nodes:
-      - 10.10.10.11
+      - 10.10.10.85
   etherpad:
-    port: 8006
     nodes:
-      - 10.10.10.15
+      - 10.10.10.95
+  buggenie:
+    nodes:
+      - 10.10.10.86
 
