@@ -31,7 +31,7 @@ infra:
       session_read: https://profile.accounts.webplatformstaging.org/v1/session/read
       session_recover: https://profile.accounts.webplatformstaging.org/v1/session/recover
 
-  gdnsd_timestamp: 2015061600
+  gdnsd_timestamp: 2015061800
 
   # Host names we want to override public name (e.g. api.accounts.webplatform.org)
   # into using its private IP address.
