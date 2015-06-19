@@ -70,10 +70,6 @@ basesystem:
         branch: webplatform-customizations
         remotes:
           upstream: git@github.com:webplatform/dabblet.git
-      /srv/code/notes-server/repo:
-        origin: https://github.com/webplatform/annotation-service.git
-        remotes:
-          upstream: git@github.com:webplatform/annotation-service.git
       /srv/code/bots/repo:
         origin: git@source.webplatform.org:pierc.git
       /srv/code/mailhub/repo:
@@ -104,10 +100,3 @@ basesystem:
         origin: https://github.com/webplatform/blog-service.git
         remotes:
           upstream: git@github.com:webplatform/blog-service.git
-      /srv/code/wiki/repo/mediawiki:
-        origin: https://github.com/webplatform/mediawiki-core.git
-        branch: wmf/1.25wmf15
-        #branch: 1.24wmf16-wpd
-        remotes:
-          upstream: git@github.com:webplatform/mediawiki-core.git
-

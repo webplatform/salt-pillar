@@ -16,6 +16,7 @@ base:
     - ganglia.group.app
     - certificates
     - rsyslog.app
+    - basesystem.app
   'backup*':
     - ganglia.group.backup
     - nfs
@@ -68,7 +69,6 @@ base:
   'roles:monitor':
     - match: grain
     - ganglia.group.monitor
-    - basesystem.monitor
   'roles:bots':
     - match: grain
     - ganglia.group.bots
