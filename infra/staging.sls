@@ -69,6 +69,7 @@ infra:
       - 10.10.10.2
     nodes:
       - 10.10.10.93
+      - 10.10.10.98
 
   ## MUST be strings, e.g. '10.10.10.1:11211'!
   sessions_memcache:
