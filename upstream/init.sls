@@ -4,7 +4,7 @@ include:
 upstream:
   cachet:
     path: /srv/webapps/status
-    host_role: noc
+    host_role: monitor
     port: 8000
   discourse:
     path: /srv/webapps/discuss
@@ -55,4 +55,8 @@ upstream:
     path: /srv/webplatform/auth-server/content
     host_role: auth
     port: 3030
+  wordpress:
+    path: /srv/webplatform/blog
+    host_role: blog
+    port: 8008
 

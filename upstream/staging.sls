@@ -23,4 +23,7 @@ upstream:
   buggenie:
     nodes:
       - 10.10.10.86
+  wordpress:
+    nodes:
+      - 10.10.10.97
 
